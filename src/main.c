@@ -396,8 +396,8 @@ void page_in_sector_read(void)
 	printf(" -------------------------------------------------------------------\n");
 
 	printf("\nEnter sector number (0 - 3)\n");
-	scanf("%d%*c", &page_nr_int);
-	page_nr = page_nr_int;
+	scanf("%d%*c", &sector_nr_int);
+	sector_nr = sector_nr_int;
 
 	printf("\nEnter page number (0 - 255)\n");
 	scanf("%d%*c", &page_nr_int);
@@ -433,8 +433,8 @@ void page_in_sector_write(void)
 	printf(" -------------------------------------------------------------------\n");
 
 	printf("\nEnter sector number (0 - 3)\n");
-	scanf("%d%*c", &page_nr_int);
-	page_nr = page_nr_int;
+	scanf("%d%*c", &sector_nr_int);
+	sector_nr = sector_nr_int;
 
 	printf("\nEnter page number (2 - 255)\n");
 	scanf("%d%*c", &page_nr_int);
