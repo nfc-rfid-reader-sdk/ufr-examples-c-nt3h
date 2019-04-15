@@ -1,0 +1,25 @@
+NT3H tags type name.
+- firmware versions 3.9.x and 5.0.1 to 5.0.13
+all NT3H tags detected as  NFC_T2T_GENERIC
+- firmware versions from 5.0.14
+NT3H tags detected as
+DL_NT3H_1101                    
+DL_NT3H_1201                    
+DL_NT3H_2111                    
+DL_NT3H_2211  
+
+Function BlockRead
+- read data from pages in sector 0 only.
+- in firmware versions 5.0.14 to 5.0.17 function returns error.  
+
+Function BlockInSectorRead
+- support from version 5.0.14
+
+Functions LinearRead and LinearWrite
+- version below 5.0.14 works with sector 0 only.
+- from version 5.014 linear data space size:
+NT3H1101 -> 888 bytes
+NT3H1201 -> 1904 bytes
+NT3H2111 -> 888 bytes
+NT3H2211 -> 1932 bytes
+
